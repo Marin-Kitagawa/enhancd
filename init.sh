@@ -3,7 +3,7 @@
 
 export ENHANCD_ROOT
 export ENHANCD_COMMAND
-export ENHANCD_FILTER
+export ENHANCD_FILTER="fzf --preview 'exa -al --tree --level 1 --group-directories-first --git-ignore --header --git --no-user --no-time --no-filesize --no-permissions {}' --preview-window right,50% --height 35% --reverse --ansi"
 export ENHANCD_DIR="${ENHANCD_DIR:-$HOME/.enhancd}"
 export ENHANCD_ENABLE_DOUBLE_DOT="${ENHANCD_ENABLE_DOUBLE_DOT:-true}"
 export ENHANCD_ENABLE_SINGLE_DOT=${ENHANCD_ENABLE_SINGLE_DOT:-true}
